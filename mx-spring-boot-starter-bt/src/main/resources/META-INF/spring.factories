@@ -1,0 +1,9 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.distributed.transaction.framework.bt.DruidAutoConfiguration,\
+cn.distributed.transaction.framework.bt.RedisAutoConfiguration,\
+cn.distributed.transaction.framework.bt.service.UndoLogServiceImpl,\
+cn.distributed.transaction.framework.bt.config.CustomResponseBodyAdvice,\
+cn.distributed.transaction.framework.bt.config.ExceptionAdviceHandler,\
+cn.distributed.transaction.framework.bt.BTAutoConfiguration
+
+ 

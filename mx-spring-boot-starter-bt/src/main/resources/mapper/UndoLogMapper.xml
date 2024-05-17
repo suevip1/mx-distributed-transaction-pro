@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.distributed.transaction.framework.bt.dao.UndoLogMapper">
+
+
+    <resultMap id="undoLogResultMap" type="cn.distributed.transaction.framework.bt.dataobj.UndoLog">
+        <result property="xid" column="xid"/>
+        <result property="branchId" column="branch_id" />
+        <result property="tableName" column="table_name" />
+        <result property="logStatus" column="log_status" />
+        <result property="logInfoBefore" column="log_info_before" typeHandler="org.apache.ibatis.type.BlobTypeHandler" />
+        <result property="logInfoAfter" column="log_info_after" typeHandler="org.apache.ibatis.type.BlobTypeHandler"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time" />
+    </resultMap>
+
+    <insert id="insertUndoLog" parameterType="cn.distributed.transaction.framework.bt.dataobj.UndoLog">
+        insert into undo_log(xid,branch_id,table_name,log_status,log_info_before,log_info_after,create_time,update_time,type) values(#{xid},#{branchId},#{tableName},#{logStatus},
+                                    #{logInfoBefore},#{logInfoAfter},
+                                    #{createTime},#{updateTime},#{type})
+    </insert>
+
+    <update id="updateUndoLogStatus">
+        update undo_log
+        set log_status = 2
+        where xid = #{xid} and branch_id = #{branchId}
+    </update>
+
+    <select id="selectUndoLog" resultMap="undoLogResultMap">
+        select * from undo_log
+        where xid = #{xid} and branch_id = #{branchId}
+    </select>
+
+    <select id="getAllRollbackData" resultMap="undoLogResultMap">
+        select * from undo_log
+        where log_status = 0
+    </select>
+
+    <update id="updateRollbackUndoLogStatus">
+        update undo_log
+        set log_status = 1
+        where xid = #{xid} and branch_id = #{branchId}
+    </update>
+</mapper>

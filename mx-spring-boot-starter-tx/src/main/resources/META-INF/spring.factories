@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.distributed.transaction.framework.tx.aspect.TXTransactionAspect,\
+cn.distributed.transaction.framework.tx.client.ClientTcpServer,\
+cn.distributed.transaction.framework.tx.config.FeignResponseInterceptor,\
+cn.distributed.transaction.framework.tx.config.FeignRequestInterceptor
+
+
+ 

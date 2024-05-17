@@ -1,0 +1,93 @@
+2024-05-17 15:18:51.981 [main] INFO  c.d.transaction.service1.Service1Application:648 - No active profile set, falling back to default profiles: default
+2024-05-17 15:18:53.596 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-17 15:18:53.602 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-17 15:18:53.666 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:187 - Finished Spring Data repository scanning in 36ms. Found 0 Redis repository interfaces.
+2024-05-17 15:18:53.769 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId:155 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2024-05-17 15:18:53.998 [main] INFO  o.springframework.cloud.context.scope.GenericScope:295 - BeanFactory id=50373aca-a6cc-3e48-baf5-693e060f32a3
+2024-05-17 15:18:54.547 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 9002 (http)
+2024-05-17 15:18:54.562 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-9002"]
+2024-05-17 15:18:54.563 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2024-05-17 15:18:54.563 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2024-05-17 15:18:54.811 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+2024-05-17 15:18:54.812 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 2794 ms
+2024-05-17 15:18:55.076 [main] INFO  o.s.boot.web.servlet.RegistrationBean:110 - Servlet statViewServlet was not registered (possibly already registered?)
+2024-05-17 15:18:55.535 [main] INFO  org.redisson.Version:41 - Redisson 3.13.6
+2024-05-17 15:18:57.745 [redisson-netty-2-24] INFO  o.r.connection.pool.MasterPubSubConnectionPool:167 - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-17 15:18:57.762 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool:167 - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-17 15:18:58.158 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector:56 - class cn.distributed.transaction.framework.bt.dataobj.UndoLog ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-05-17 15:18:59.496 [main] WARN  com.netflix.config.sources.URLConfigurationSource:121 - No URLs will be polled as dynamic configuration sources.
+2024-05-17 15:18:59.497 [main] INFO  com.netflix.config.sources.URLConfigurationSource:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-17 15:18:59.505 [main] WARN  com.netflix.config.sources.URLConfigurationSource:121 - No URLs will be polled as dynamic configuration sources.
+2024-05-17 15:18:59.506 [main] INFO  com.netflix.config.sources.URLConfigurationSource:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-17 15:18:59.706 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-17 15:19:00.137 [main] INFO  com.alibaba.druid.pool.DruidDataSource:985 - {dataSource-1} inited
+2024-05-17 15:19:03.476 [main] INFO  c.d.transaction.framework.bt.server.RollbackServer:57 - bt start listen port 9092
+2024-05-17 15:19:04.312 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:181 - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2024-05-17 15:19:04.389 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager:56 - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-05-17 15:19:04.389 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager:56 - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-05-17 15:19:09.473 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:58 - Exposing 18 endpoint(s) beneath base path '/actuator'
+2024-05-17 15:19:09.638 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-9002"]
+2024-05-17 15:19:09.660 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 9002 (http) with context path ''
+2024-05-17 15:19:09.673 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:75 - nacos registry, DEFAULT_GROUP service1 10.56.41.138:9002 register finished
+2024-05-17 15:19:10.458 [main] INFO  c.d.transaction.service1.Service1Application:61 - Started Service1Application in 21.678 seconds (JVM running for 25.316)
+2024-05-17 15:19:11.083 [RMI TCP Connection(6)-192.168.98.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-17 15:19:11.083 [RMI TCP Connection(6)-192.168.98.1] INFO  org.springframework.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2024-05-17 15:19:11.091 [RMI TCP Connection(6)-192.168.98.1] INFO  org.springframework.web.servlet.DispatcherServlet:547 - Completed initialization in 7 ms
+2024-05-17 15:21:24.690 [Thread-36] WARN  com.alibaba.nacos.common.notify.NotifyCenter:136 - [NotifyCenter] Start destroying Publisher
+2024-05-17 15:21:24.690 [Thread-39] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 - [HttpClientBeanHolder] Start destroying common HttpClient
+2024-05-17 15:21:24.691 [Thread-36] WARN  com.alibaba.nacos.common.notify.NotifyCenter:153 - [NotifyCenter] Destruction of the end
+2024-05-17 15:21:24.692 [Thread-39] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 - [HttpClientBeanHolder] Destruction of the end
+2024-05-17 15:21:25.325 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:218 - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2024-05-17 15:21:25.340 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:94 - De-registering from Nacos Server now...
+2024-05-17 15:21:25.345 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:114 - De-registration finished.
+2024-05-17 15:21:25.677 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-17 15:21:25.680 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource:2032 - {dataSource-1} closing ...
+2024-05-17 15:21:25.685 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource:2104 - {dataSource-1} closed
+2024-05-17 15:22:22.706 [main] INFO  c.d.transaction.service1.Service1Application:648 - No active profile set, falling back to default profiles: default
+2024-05-17 15:22:24.351 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-17 15:22:24.356 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-17 15:22:24.419 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate:187 - Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2024-05-17 15:22:24.540 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId:155 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2024-05-17 15:22:24.809 [main] INFO  o.springframework.cloud.context.scope.GenericScope:295 - BeanFactory id=50373aca-a6cc-3e48-baf5-693e060f32a3
+2024-05-17 15:22:25.423 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 9002 (http)
+2024-05-17 15:22:25.440 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-9002"]
+2024-05-17 15:22:25.441 [main] INFO  org.apache.catalina.core.StandardService:173 - Starting service [Tomcat]
+2024-05-17 15:22:25.441 [main] INFO  org.apache.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2024-05-17 15:22:25.712 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+2024-05-17 15:22:25.712 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:285 - Root WebApplicationContext: initialization completed in 2969 ms
+2024-05-17 15:22:26.048 [main] INFO  o.s.boot.web.servlet.RegistrationBean:110 - Servlet statViewServlet was not registered (possibly already registered?)
+2024-05-17 15:22:26.566 [main] INFO  org.redisson.Version:41 - Redisson 3.13.6
+2024-05-17 15:22:28.922 [redisson-netty-2-24] INFO  o.r.connection.pool.MasterPubSubConnectionPool:167 - 1 connections initialized for localhost/127.0.0.1:6379
+2024-05-17 15:22:28.939 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool:167 - 24 connections initialized for localhost/127.0.0.1:6379
+2024-05-17 15:22:29.337 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector:56 - class cn.distributed.transaction.framework.bt.dataobj.UndoLog ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2024-05-17 15:22:30.630 [main] WARN  com.netflix.config.sources.URLConfigurationSource:121 - No URLs will be polled as dynamic configuration sources.
+2024-05-17 15:22:30.631 [main] INFO  com.netflix.config.sources.URLConfigurationSource:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-17 15:22:30.640 [main] WARN  com.netflix.config.sources.URLConfigurationSource:121 - No URLs will be polled as dynamic configuration sources.
+2024-05-17 15:22:30.641 [main] INFO  com.netflix.config.sources.URLConfigurationSource:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-17 15:22:30.890 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-17 15:22:31.379 [main] INFO  com.alibaba.druid.pool.DruidDataSource:985 - {dataSource-1} inited
+2024-05-17 15:22:33.942 [main] INFO  c.d.transaction.framework.bt.server.RollbackServer:57 - bt start listen port 9092
+2024-05-17 15:22:34.829 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:181 - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2024-05-17 15:22:34.899 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager:56 - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-05-17 15:22:34.900 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager:56 - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-05-17 15:22:40.131 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver:58 - Exposing 18 endpoint(s) beneath base path '/actuator'
+2024-05-17 15:22:40.298 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-9002"]
+2024-05-17 15:22:40.321 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 9002 (http) with context path ''
+2024-05-17 15:22:40.332 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:75 - nacos registry, DEFAULT_GROUP service1 10.56.41.138:9002 register finished
+2024-05-17 15:22:41.319 [main] INFO  c.d.transaction.service1.Service1Application:61 - Started Service1Application in 21.675 seconds (JVM running for 23.311)
+2024-05-17 15:22:42.521 [RMI TCP Connection(12)-192.168.98.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-17 15:22:42.522 [RMI TCP Connection(12)-192.168.98.1] INFO  org.springframework.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2024-05-17 15:22:42.530 [RMI TCP Connection(12)-192.168.98.1] INFO  org.springframework.web.servlet.DispatcherServlet:547 - Completed initialization in 8 ms
+2024-05-17 15:22:54.254 [http-nio-9002-exec-1] INFO  c.d.t.framework.bt.config.MybatisBTInterceptor:89 - Resolved SQL: insert into book values('9999','hh',10,10)
+2024-05-17 15:22:54.392 [pool-1-thread-1] INFO  c.d.transaction.framework.bt.server.RollbackServer:74 - build connect
+2024-05-17 15:23:00.526 [pool-1-thread-1] INFO  c.d.transaction.framework.bt.server.RollbackServer:94 - finish connect
+2024-05-17 15:23:21.491 [Thread-30] WARN  com.alibaba.nacos.common.notify.NotifyCenter:136 - [NotifyCenter] Start destroying Publisher
+2024-05-17 15:23:21.491 [Thread-33] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 - [HttpClientBeanHolder] Start destroying common HttpClient
+2024-05-17 15:23:21.492 [Thread-30] WARN  com.alibaba.nacos.common.notify.NotifyCenter:153 - [NotifyCenter] Destruction of the end
+2024-05-17 15:23:21.493 [Thread-33] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 - [HttpClientBeanHolder] Destruction of the end
+2024-05-17 15:23:22.123 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler:218 - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2024-05-17 15:23:22.137 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:94 - De-registering from Nacos Server now...
+2024-05-17 15:23:22.140 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry:114 - De-registration finished.
+2024-05-17 15:23:22.474 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-17 15:23:22.476 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource:2032 - {dataSource-1} closing ...
+2024-05-17 15:23:22.480 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource:2104 - {dataSource-1} closed
